@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Simple Employee Management System</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<style>
+	#frm{
+		width:500px;
+		margin:auto;
+		margin-top:100px;
+		
+	}
+</style>
+<body class="container-fluid">
+	<form class="form card" id="frm" action="register" method="post">
+		<h2 class="bg-black card-header">Employee Information Form</h2>
+		<table class="table">
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="userName" required></td>
+				
+			</tr>
+			
+			<tr>
+				<td>Designation</td>
+				<td><input type="text" name="position" required></td>
+			</tr>
+			
+			<tr>
+				<td>Salary</td>
+				<td><input type ="text" name = "salary" required></td>
+			</tr>
+			
+			<tr class="card-footer">
+				<td><button class="btn btn-outline-success" type="submit">Create</button></td>
+				<td><button class="btn btn-outline-danger" type="reset">Reset</button></td>
+			</tr>
+		</table>
+		<button class="btn btn-outline-success d-block"><a href="showdata">Show Employee detail</a></button>
+	</form>
+	
+
+</body>
+</html>
